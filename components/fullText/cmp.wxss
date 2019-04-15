@@ -1,0 +1,23 @@
+/* components/fullText/cmp.wxss */
+.container{
+    width:100%;
+}
+.main-text-box{
+    overflow: hidden;
+    width:100%;
+    background-color:rgb(227,241,241);
+    padding:20rpx 30rpx;
+    text-indent:1em;
+    margin-bottom:20rpx;
+}
+.main-text{
+    font-family:"宋体";
+    font-size:36rpx;
+    font-weight:600;
+    line-height:50rpx;
+
+}
+.head-text{
+   font-size:36rpx;
+   font-weight:500;
+}

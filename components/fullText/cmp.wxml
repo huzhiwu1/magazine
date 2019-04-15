@@ -1,0 +1,8 @@
+<!--components/fullText/cmp.wxml-->
+<!-- <text>components/fullText/cmp.wxml</text> -->
+<view class="container">
+    <view class="main-text-box">
+        <text class="main-text">{{mainText}}</text>
+    </view>
+    <text class="head-text">{{headText}}</text>
+</view>

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "d-bigimg":"/components/bigImg/cmp",
+    "d-fulltext":"/components/fullText/cmp"
+  }
+}

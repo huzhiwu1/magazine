@@ -1,0 +1,27 @@
+/* components/bigImg/cmp.wxss */
+.container{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    
+}
+.img{
+    width:100%;
+}
+.title{
+    font-size:36rpx;
+    letter-spacing:2rpx;
+    font-weight:500;
+   
+    line-height:50rpx;
+}
+.smallTitle{
+    margin-top:20rpx;
+    font-size:28rpx;
+    letter-spacing: 2rpx;
+    font-weight:500;
+    
+    line-height:40rpx;
+    color:#666
+}
