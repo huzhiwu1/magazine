@@ -4,5 +4,5 @@
     <view class="main-text-box">
         <text class="main-text">{{mainText}}</text>
     </view>
-    <text class="head-text">{{headText}}</text>
+    <text class="head-text">{{smallTitle}}</text>
 </view>

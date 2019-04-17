@@ -1,0 +1,13 @@
+<!--components/nineImg/cmp.wxml-->
+<!-- <text>components/nineImg/cmp.wxml</text> -->
+<view class="container">
+    <view class="img-box"  >
+        <image src="{{item}}" wx:for="{{imgArr}}" wx:key="{{this}}" />
+    </view>
+    <view class="text-box">
+        <text class="mainText">{{mainText}}</text>
+        <view>
+            <text class="smallTitle">{{smallTitle}}</text>
+        </view>
+    </view>
+</view>

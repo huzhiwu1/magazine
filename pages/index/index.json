@@ -1,6 +1,8 @@
 {
   "usingComponents": {
+    "d-nineimg":"/components/nineImg/cmp",
     "d-bigimg":"/components/bigImg/cmp",
-    "d-fulltext":"/components/fullText/cmp"
+    "d-fulltext":"/components/fullText/cmp",
+    "d-imgtext":"/components/imgText/cmp"
   }
 }

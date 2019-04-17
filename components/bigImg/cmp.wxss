@@ -1,18 +1,18 @@
 /* components/bigImg/cmp.wxss */
 .container{
-    width:100%;
+    width:710rpx;
     display:flex;
     flex-direction:column;
     align-items:flex-start;
     
 }
 .img{
-    width:100%;
+    width:710rpx;
 }
 .title{
     font-size:36rpx;
     letter-spacing:2rpx;
-    font-weight:500;
+    font-weight:400;
    
     line-height:50rpx;
 }

@@ -1,0 +1,36 @@
+/* components/imgText/cmp.wxss */
+.container{
+    width:710rpx;
+    display:flex;
+   
+    justify-content:flex-start;
+    align-items:flex-start;
+
+}
+.left{
+    
+    width:480rpx;
+    margin-right:20rpx;
+    
+}
+.left>.mainText{
+    letter-spacing: 1rpx;
+    font-size:36rpx;
+    font-weight:500;
+    line-height:50rpx;
+}
+.left>.smallTitle{
+    margin-top:10rpx;
+    display:block;
+    letter-spacing: 1rpx;
+    color:#777;
+    font-size:28rpx;
+    font-weight:400;
+}
+.right{
+    
+    width:210rpx;
+}
+.right>.img{
+    width:100%;
+}

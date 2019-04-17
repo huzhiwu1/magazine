@@ -1,4 +1,4 @@
-// components/bigImg/cmp.js
+// components/imgText/cmp.js
 let myBeh = require("../behaviors/my-behavior.js");
 Component({
   /**
@@ -6,9 +6,9 @@ Component({
    */
   behaviors:[myBeh],
   properties: {
-    // imgSrc:String,
     // mainText:String,
-    // smallTitle:String
+    // smallTitle:String,
+    // imgSrc:String
   },
 
   /**

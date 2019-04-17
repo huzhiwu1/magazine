@@ -1,9 +1,17 @@
 <!--pages/index/index.wxml-->
 <!-- <text>pages/index/index.wxml</text> -->
+<d-nineimg imgArr="{{nineImg.imgArr}}"
+            mainText="{{nineImg.mainText}}"
+            smallTitle="{{nineImg.smallTitle}}">
+</d-nineimg>
+<d-imgtext mainText="{{imgText.mainText}}" 
+    smallTitle="{{imgText.smallTitle}}"
+    imgSrc="{{imgText.imgSrc}}">
+</d-imgtext>
 <d-bigimg imgSrc="{{bigimg.imgSrc}}" 
-    mainTitle="{{bigimg.mainTitle}}" 
+    mainText="{{bigimg.mainTitle}}" 
     smallTitle="{{bigimg.smallTitle}}">
 </d-bigimg>
 <d-fulltext mainText="{{fulltext.mainText}}"
-            headText="{{fulltext.headText}}">
+            smallTitle="{{fulltext.headText}}">
 </d-fulltext>

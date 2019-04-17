@@ -1,11 +1,13 @@
 // components/fullText/cmp.js
+let myBeh = require("../behaviors/my-behavior.js");
 Component({
   /**
    * 组件的属性列表
    */
+  behaviors:[myBeh],
   properties: {
-    mainText:String,
-    headText:String
+    // mainText:String,
+    // smallTitle:String
   },
 
   /**

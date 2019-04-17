@@ -2,6 +2,6 @@
 <!-- <text>components/bigImg/cmp.wxml</text> -->
 <view class="container">
     <image class="img" mode="widthFix" src="{{imgSrc}}"></image>
-    <text class="title">{{mainTitle}}</text>
+    <text class="title">{{mainText}}</text>
     <text class="smallTitle">{{smallTitle}}</text>
 </view>
