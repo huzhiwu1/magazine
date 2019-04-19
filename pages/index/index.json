@@ -3,6 +3,7 @@
     "d-nineimg":"/components/nineImg/cmp",
     "d-bigimg":"/components/bigImg/cmp",
     "d-fulltext":"/components/fullText/cmp",
-    "d-imgtext":"/components/imgText/cmp"
+    "d-imgtext":"/components/imgText/cmp",
+    "d-video":"/components/video/cmp"
   }
 }

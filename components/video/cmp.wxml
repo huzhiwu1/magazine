@@ -1,0 +1,32 @@
+<!--components/video/cmp.wxml-->
+<!-- <text>components/video/cmp.wxml</text> -->
+<view class="container">
+    <view bindtap="onVideoPlay" id="{{videoId}}"class="videoBox">
+        <video src="{{videoSrc}}"
+                controls="{{controls}}" 
+                bindended="videoEnd"
+                style="z-index:{{showVideo?10:0}}"
+        class="video"></video>
+        <cover-view class="posterBox" hidden="{{!maskDisplay}}">
+            <cover-image src="{{poster}}"></cover-image>
+            <cover-view class="controls-box">
+                <cover-image class="controls-img"
+                    src="{{controlsImg}}"
+                ></cover-image>
+                <cover-view class="duration">{{duration}}</cover-view>
+            </cover-view>
+        </cover-view>
+    </view>
+    <view class="mainText">{{mainText}}</view>
+    <view class="smallTitle">{{smallTitle}}</view>
+    <scroll-view  
+        catchtap="offMask"
+        class="mask" 
+        scroll-y="true"
+        hidden="{{maskDisplay}}"
+        bindscroll="offMask">
+        
+        <view class="null" style="height:1500rpx"></view>
+    </scroll-view>
+</view>
+

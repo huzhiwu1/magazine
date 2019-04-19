@@ -2,7 +2,8 @@
 <!-- <text>components/nineImg/cmp.wxml</text> -->
 <view class="container">
     <view class="img-box"  >
-        <image src="{{item}}" wx:for="{{imgArr}}" wx:key="{{this}}" />
+        <image catchtap="showImg" data-currentUrl="{{item}}"src="{{item}}" wx:for="{{imgArr}}" wx:key="{{this}}" />
+        <text class="img-num" wx:if="{{imgNum>9}}">{{imgNum}}+</text>
     </view>
     <view class="text-box">
         <text class="mainText">{{mainText}}</text>

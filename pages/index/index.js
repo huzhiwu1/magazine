@@ -32,10 +32,19 @@ Page({
         "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1555517452022&di=fe4b0fd2779b1117f443e356c1f5e213&imgtype=0&src=http%3A%2F%2Fimg.youxile.com%2Fpic%2F1606%2F172621.png"
       ],
       mainText:"海贼王是最自由的！",
-      smallTitle:"路飞说:我可是要做海贼王的男人啊，怎么可以在这里倒下"
-    }
-  },
+      smallTitle:"路飞说:我可是要做海贼王的男人啊，怎么可以在这里倒下",
+      imgNum:10,
+    },
+    video:{
+      src:"http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400",
+      mainText:'"如今的年轻人，每个人都是一座孤岛"|如何进入另一个人的灵魂',
+      smallTitle:"唯有深度的沟通和深刻的联结，才能真正刺破漫天无边际的孤独与空虚。"
 
+    },
+  },
+  onscroll:function(e){
+    console.log(e);
+  },
   /**
    * 生命周期函数--监听页面加载
    */
@@ -89,6 +98,9 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
+
+  },
+  onPageScroll:function(){
 
   }
 })

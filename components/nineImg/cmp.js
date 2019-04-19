@@ -7,6 +7,7 @@ Component({
   behaviors:[myBeh],
   properties: {
     imgArr:Array,
+    imgNum:Number,
     // imgArr:{
     //   type:Array,
     //   value:[
@@ -37,6 +38,16 @@ Component({
    * 组件的方法列表
    */
   methods: {
+    showImg:function(e){
+      let that = this;
 
+      let currentUrl = e.currentTarget.dataset.currenturl;
+
+      wx.previewImage({
+        current:currentUrl,
+        urls:that.properties.imgArr,
+      })
+      
+    }
   }
 })
