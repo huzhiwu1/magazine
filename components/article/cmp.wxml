@@ -1,0 +1,21 @@
+<!--components/article/cmp.wxml-->
+<!-- <text>components/article/cmp.wxml</text> -->
+<view class="container">
+    <d-nineimg wx:if="{{type==1}}"></d-nineimg>
+    <d-bigimg wx:elif="{{type==0}}"
+            imgSrc="{{'http://img1.imgtn.bdimg.com/it/u=1393987749,3422146058&fm=26&gp=0.jpg'}}"
+            mainText="{{'这里的风景好美呀'}}"
+            smallTitle="{{'愿有生之年能环游世界'}}"></d-bigimg>
+    <d-fulltext wx:elif="{{type==4}}"></d-fulltext>
+    <d-imgtext wx:elif="{{type==2}}"></d-imgtext>
+    <d-video wx:elif="{{type==3}}"></d-video>
+    <view class="tagImg">
+        <d-tag tagName="{{'风景'}}"></d-tag>
+        <view class="tagArr">
+            <d-more></d-more>
+            <d-collection></d-collection>
+        </view>
+        
+    </view>
+    
+</view>

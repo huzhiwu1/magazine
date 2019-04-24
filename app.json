@@ -1,6 +1,8 @@
 {
   "pages": [
-    "pages/index/index"
+    "pages/mark/index",
+    "pages/index/index",
+    "pages/type/index"
     
   ],
   "window": {

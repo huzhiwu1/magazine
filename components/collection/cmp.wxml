@@ -1,0 +1,5 @@
+<!--components/collection/cmp.wxml-->
+<!-- <text>components/collection/cmp.wxml</text> -->
+<view class="container" catchtap="likeIt">
+    <image src="{{isLike?'./image/circle_fill.png':'./image/circle.png'}}" />
+</view>

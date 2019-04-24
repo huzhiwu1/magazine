@@ -8,6 +8,7 @@
 }
 .img{
     width:710rpx;
+    margin-bottom:20rpx;
 }
 .title{
     font-size:36rpx;

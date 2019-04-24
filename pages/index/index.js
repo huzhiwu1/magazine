@@ -1,4 +1,7 @@
 // pages/index/index.js
+let Request = require("../../utils/request.js");
+const request = new Request;
+console.log(request)
 Page({
 
   /**
@@ -41,6 +44,10 @@ Page({
       smallTitle:"唯有深度的沟通和深刻的联结，才能真正刺破漫天无边际的孤独与空虚。"
 
     },
+    tag:{
+      tagName:"读书",
+      typeid:1
+    }
   },
   onscroll:function(e){
     console.log(e);
@@ -49,7 +56,8 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+  
+    request.getData("/searchArticleList",1)
   },
 
   /**

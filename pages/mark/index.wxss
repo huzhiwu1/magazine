@@ -1,0 +1,49 @@
+/* pages/mark/index.wxss */
+.container{
+    display:flex;
+    flex-direction:column;
+    width:100%;
+    padding:0 20rpx;
+}
+.user{
+    width:680rpx;
+    border-bottom:1px solid #eee;
+    padding:10rpx 10rpx 20rpx 10rpx;
+}
+.userInfo{
+    width:680rpx;
+    display:flex;
+    justify-content:space-between;
+    
+}
+.userName{
+    font-size:52rpx;
+    letter-spacing:1rpx;
+}
+.userImg{
+    width:100rpx;
+    height:100rpx;
+    border-radius:50%;
+}
+.shareBox{
+    width: 680rpx;
+    margin-top:60rpx;
+    text-align:right;
+    
+}
+.shareImg{
+    width:60rpx;
+    height:60rpx;
+}
+button{
+    display:inline-block;
+  padding:0;
+  margin:0;
+  border:0;
+  background-color:#fff;
+  line-height:1;
+
+}
+button::after{
+    border:0;
+}

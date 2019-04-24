@@ -1,9 +1,9 @@
 <!--pages/index/index.wxml-->
 <!-- <text>pages/index/index.wxml</text> -->
-
-<d-video mainText="{{video.mainText}}"
-        smallTitle="{{video.smallTitle}}"
-        videoSrc="{{video.src}}"></d-video>
+<d-article type="{{0}}"></d-article>
+<d-collection></d-collection>
+<d-more></d-more>
+<d-tag typeid="{{tag.typeid}}" tagName="{{tag.tagName}}"></d-tag>
 <d-nineimg imgArr="{{nineImg.imgArr}}"
             mainText="{{nineImg.mainText}}"
             smallTitle="{{nineImg.smallTitle}}"
@@ -17,6 +17,9 @@
     mainText="{{bigimg.mainTitle}}" 
     smallTitle="{{bigimg.smallTitle}}">
 </d-bigimg>
+<d-video mainText="{{video.mainText}}"
+        smallTitle="{{video.smallTitle}}"
+        videoSrc="{{video.src}}"></d-video>
 <d-fulltext mainText="{{fulltext.mainText}}"
             smallTitle="{{fulltext.headText}}">
 </d-fulltext>

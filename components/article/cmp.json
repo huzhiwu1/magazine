@@ -1,6 +1,6 @@
 {
+  "component": true,
   "usingComponents": {
-    "d-article":"/components/article/cmp",
     "d-collection":"/components/collection/cmp",
     "d-nineimg":"/components/nineImg/cmp",
     "d-bigimg":"/components/bigImg/cmp",
@@ -9,6 +9,5 @@
     "d-video":"/components/video/cmp",
     "d-tag":"/components/tag/cmp",
     "d-more":"/components/more/cmp"
-    
   }
 }

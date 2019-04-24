@@ -1,0 +1,26 @@
+<!--pages/mark/index.wxml-->
+<!-- <text>pages/mark/index.wxml</text> -->
+<view class="container">
+    <view class="user">
+        <view class="userInfo">
+            <text class="userName">{{userInfo.nickName || '小年轻'}}</text>
+             <image class="userImg" wx:if="{{!getUserInfoBtn}}" src="{{userInfo.avatarUrl}}"></image>
+            <button open-type="getUserInfo" wx:else lang="zh_CN" bindgetuserinfo="onGetUserInfo">
+
+                <image class="userImg" src="/images/mark/login.png"></image>
+            </button>
+            
+        </view>
+        
+       
+        <view class="shareBox">
+            <button open-type="share">
+                <image class="shareImg" src="/images/mark/relay.png"></image>
+            </button>
+            
+        </view>
+    </view>
+    <view class="userLike">
+        <d-article></d-article>
+    </view>
+</view>

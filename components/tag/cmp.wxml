@@ -1,0 +1,5 @@
+<!--components/tag/cmp.wxml-->
+<!-- <text>components/tag/cmp.wxml</text> -->
+<view catchtap="gotoType" class="container" data-typeid="{{taypeid}}">
+    {{tagName}}
+</view>

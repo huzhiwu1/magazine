@@ -1,0 +1,22 @@
+/* components/article/cmp.wxss */
+.container{
+    width:710rpx;
+    padding: 20rpx 0rpx;
+    border-top:1rpx solid #eee;
+    border-bottom:1rpx solid #eee; 
+}
+.tagImg{
+    margin-top:20rpx;
+
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.tagArr{
+    
+    width:140rpx;
+    height:65.6rpx;
+    margin-right:10rpx;
+    display:flex;
+    justify-content: space-between;
+}

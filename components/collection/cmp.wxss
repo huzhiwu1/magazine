@@ -1,0 +1,8 @@
+/* components/collection/cmp.wxss */
+.contaienr{}
+.container>image{
+    width:50rpx;
+    height:50rpx;
+    vertical-align:middle;
+    margin:0 10rpx;
+}

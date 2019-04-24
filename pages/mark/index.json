@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "d-article":"/components/article/cmp"
+  }
+}
