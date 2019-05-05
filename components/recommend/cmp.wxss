@@ -1,0 +1,60 @@
+/* components/recommend/cmp.wxss */
+.container{
+    width:710rpx;
+    padding:20rpx;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+}
+.title{
+    font-size:28rpx;
+    letter-spacing: 1rpx;
+    margin:30rpx 0;
+}
+.date{
+    font-size:50rpx;
+    letter-spacing: 2rpx;
+    padding:20rpx;
+  
+    
+}
+.date::after{
+    margin:20rpx auto;
+    display:block;
+    content:"";
+    width:100rpx;
+    height:2rpx;
+    background-color:#c0c0c0;
+}
+.img{
+    width:710rpx;
+}
+.loader{
+    width:710rpx;
+    height:710rpx;
+    background-color:rgba(0,0,0,0.3);
+    position:relative;
+}
+.loading{
+    width:60rpx;
+    height:60rpx;
+    border:10rpx solid #eee;
+    border-radius:50%;
+  
+
+    border-bottom-color:transparent;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-top:-30rpx;
+    margin-left:-30rpx;
+    animation:loading 1s infinite;
+}
+@keyframes loading{
+    0%{
+        transform:rotateZ(0deg)
+    }
+    100%{
+        transform:rotateZ(360deg);
+    }
+}

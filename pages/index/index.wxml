@@ -28,7 +28,8 @@
 <!-- <block wx:for="{{articleList}}">
     <d-article articleDetail="{{item}}"></d-article>
 </block> -->
-
+<d-nav></d-nav>
+<d-recommend></d-recommend>
 <d-articleList articleList="{{articleList}}"
                 more="{{getMore}}"
                 magazineId="{{magazineId}}"

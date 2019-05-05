@@ -1,0 +1,21 @@
+<!--components/recommend/cmp.wxml-->
+<!-- <text>components/recommend/cmp.wxml</text> -->
+<view class="container">
+    <text class="date">{{date}}</text>
+    <text class="title">{{title}}</text>
+    <image class="img" mode="widthFix" src="{{imgSrc}}" hidden="{{!imgSrc}}"></image>
+    <view class="loader" hidden="{{imgSrc}}">
+        <view class="loading"></view>
+    </view>
+</view>
+<!-- loading的做法
+外框加内框
+外框要设置深一点的背景颜色
+内框误背景颜色，要有border,其中一个border是透明的，另外的border是较浅的颜色
+@keyframes 名字{
+    0%{
+        样式
+    }
+}
+animation:名字 运行时间 运行多少次（infinite)
+-->
