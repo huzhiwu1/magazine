@@ -3,7 +3,7 @@
 <view class="container">
     <view class="img-box"  >
         <image catchtap="showImg" data-currentUrl="{{item}}"src="{{item}}" wx:for="{{imgArr}}" wx:key="{{this}}" />
-        <text class="img-num" wx:if="{{imgNum>9}}">{{imgNum}}+</text>
+        <text class="img-num" wx:if="{{imgArr.length>9}}">{{imgArr.length}}+</text>
     </view>
     <view class="text-box">
         <text class="mainText">{{mainText}}</text>

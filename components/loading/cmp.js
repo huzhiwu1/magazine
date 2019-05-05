@@ -1,10 +1,14 @@
-// components/article/cmp.js
+// components/loading/cmp.js
 Component({
   /**
    * 组件的属性列表
    */
   properties: {
-    articleDetail:Object,
+    hidden:{
+      type:Boolean,
+      value:false,
+      observer(){}
+    }
   },
 
   /**

@@ -1,14 +1,5 @@
 {
   "usingComponents": {
-    "d-article":"/components/article/cmp",
-    "d-collection":"/components/collection/cmp",
-    "d-nineimg":"/components/nineImg/cmp",
-    "d-bigimg":"/components/bigImg/cmp",
-    "d-fulltext":"/components/fullText/cmp",
-    "d-imgtext":"/components/imgText/cmp",
-    "d-video":"/components/video/cmp",
-    "d-tag":"/components/tag/cmp",
-    "d-more":"/components/more/cmp"
-    
+    "d-articleList":"/components/articleList/cmp"
   }
 }

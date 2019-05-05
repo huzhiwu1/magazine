@@ -1,7 +1,7 @@
 /* components/article/cmp.wxss */
 .container{
     width:710rpx;
-    padding: 20rpx 0rpx;
+    padding: 20rpx;
     border-top:1rpx solid #eee;
     border-bottom:1rpx solid #eee; 
 }

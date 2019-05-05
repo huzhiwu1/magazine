@@ -1,7 +1,10 @@
 // pages/index/index.js
-let Request = require("../../utils/request.js");
-const request = new Request;
-console.log(request)
+// let Request = require("../../utils/request.js");
+// const request = new Request;
+// console.log(request)
+let indexModel = require("../../model/index");
+let indexRequest = new indexModel; 
+let randomStr = require("../../utils/randomStr");
 Page({
 
   /**
@@ -47,7 +50,9 @@ Page({
     tag:{
       tagName:"读书",
       typeid:1
-    }
+    },
+    getMore:'',
+    magazineId:0
   },
   onscroll:function(e){
     console.log(e);
@@ -56,8 +61,26 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
-    request.getData("/searchArticleList",1)
+    wx.showLoading();
+    // request.getData("/getRecommendInfo/0",)
+    this.getData();
+    
+  },
+  getData(){
+    indexRequest.getArticleList().then(res=>console.log(res));
+    let articleList = indexRequest.getArticleList();
+    let markTypeList = indexRequest.getMarkTypeList();
+    let recommendInfo = indexRequest.getRecommendInfo();
+    let that = this;
+    Promise.all([articleList,markTypeList,recommendInfo]).then(res=>{
+      that.setData({
+        articleList:res[0],
+        markTypeList:res[1],
+        recommendInfo:res[2]
+      })
+      console.log(res[0],res[1],res[2])
+      wx.hideLoading();
+    })
   },
 
   /**
@@ -99,7 +122,11 @@ Page({
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
-
+    // console.log("1111");
+    let more = randomStr(20);
+    this.setData({
+      getMore:more,
+    })
   },
 
   /**

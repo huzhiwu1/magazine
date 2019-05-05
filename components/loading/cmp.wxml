@@ -1,0 +1,6 @@
+<!--components/loading/cmp.wxml-->
+<!-- <text>components/loading/cmp.wxml</text> -->
+<view class="container" hidden="{{hidden}}">
+    <view class="circle1"></view>
+    <view class="circle2"></view>
+</view>

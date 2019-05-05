@@ -1,0 +1,10 @@
+<!--components/articleList/cmp.wxml-->
+<!-- <text>components/articleList/cmp.wxml</text> -->
+<view class="container" more="{{getMore}}" magazineId="{{magazineId}}">
+  
+    <block wx:for="{{articleList}}">
+    <d-article articleDetail="{{item}}"></d-article>
+    </block>
+      <d-loading class="loading" hidden="{{!loading}}"></d-loading>
+    <text class="noMore" wx:if="{{notMore}}">没有更多了...</text>
+</view>

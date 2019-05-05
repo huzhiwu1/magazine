@@ -48,6 +48,7 @@ Page({
         this.setData({
           userInfo:res.userInfo,
           getUserInfoBtn:false,
+          user:res,
         })
 
       }

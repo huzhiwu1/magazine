@@ -1,6 +1,6 @@
 <!--pages/index/index.wxml-->
 <!-- <text>pages/index/index.wxml</text> -->
-<d-article type="{{0}}"></d-article>
+<!-- <d-article type="{{0}}"></d-article>
 <d-collection></d-collection>
 <d-more></d-more>
 <d-tag typeid="{{tag.typeid}}" tagName="{{tag.tagName}}"></d-tag>
@@ -22,4 +22,14 @@
         videoSrc="{{video.src}}"></d-video>
 <d-fulltext mainText="{{fulltext.mainText}}"
             smallTitle="{{fulltext.headText}}">
-</d-fulltext>
+</d-fulltext> -->
+
+
+<!-- <block wx:for="{{articleList}}">
+    <d-article articleDetail="{{item}}"></d-article>
+</block> -->
+
+<d-articleList articleList="{{articleList}}"
+                more="{{getMore}}"
+                magazineId="{{magazineId}}"
+></d-articleList>
