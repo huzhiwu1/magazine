@@ -1,0 +1,16 @@
+/* components/user/cmp.wxss */
+.userInfo{
+    width:710rpx;
+    /* padding: 20rpx; */
+    padding:20rpx 0;
+    margin-bottom:10rpx;
+    font-size:28rpx;
+    border-bottom:1rpx solid #eee;
+}
+.avatar{
+    width:80rpx;
+    height:80rpx;
+    border-radius:50%;
+    vertical-align: middle;
+    margin-right:20rpx;
+}

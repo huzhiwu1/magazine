@@ -2,6 +2,9 @@
   "usingComponents": {
     "d-articleList":"/components/articleList/cmp",
     "d-nav":"/components/nav/cmp",
-    "d-recommend":"/components/recommend/cmp"
-  }
+    "d-recommend":"/components/recommend/cmp",
+    "d-tagList":"/components/tagList/cmp",
+    "d-loading":"/components/loading/cmp"
+  },
+  "navigationBarTitleText":"杂志"
 }

@@ -7,6 +7,7 @@ Page({
   data: {
     userInfo:{},
     getUserInfoBtn:true,
+    
   },
   onGetUserInfo:function(e){
     console.log(e);
@@ -67,7 +68,14 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    // 用户授权后才能拿到收藏信息
+    if(this.data.getUserInfoBtn){
+      const likeList = wx.getStorageSync("like");
+      this.setData({
+        likeList,
+      })
+    }
+   
   },
 
   /**

@@ -51,8 +51,9 @@ Page({
       tagName:"读书",
       typeid:1
     },
-    getMore:'',
-    magazineId:0
+    More:'',
+    magazineId:0,
+    loading:true,
   },
   onscroll:function(e){
     console.log(e);
@@ -64,24 +65,52 @@ Page({
     wx.showLoading();
     // request.getData("/getRecommendInfo/0",)
     this.getData();
+   
     
   },
-  getData(){
+  getData(magazineId){
     indexRequest.getArticleList().then(res=>console.log(res));
-    let articleList = indexRequest.getArticleList();
-    let markTypeList = indexRequest.getMarkTypeList();
-    let recommendInfo = indexRequest.getRecommendInfo();
+    let articleList = indexRequest.getArticleList(magazineId);
+    let markTypeList = indexRequest.getMarkTypeList(magazineId);
+    let recommendInfo = indexRequest.getRecommendInfo(magazineId);
     let that = this;
     Promise.all([articleList,markTypeList,recommendInfo]).then(res=>{
       that.setData({
         articleList:res[0],
         markTypeList:res[1],
-        recommendInfo:res[2]
+        recommendInfo:res[2],
+        loading:false,//当数据请求过来后，就不显示loading动画
       })
       console.log(res[0],res[1],res[2])
       wx.hideLoading();
     })
   },
+  goCataLog(){
+    wx.switchTab({
+      url:"/pages/cataLog/index",
+    })
+  },
+  onNavTap:function(e){
+    const magazineId = e.detail.magazineIndex;
+    this.setData({
+      magazineId:magazineId,
+    })
+    this.getData(magazineId);
+    //每次点击导航条都跳到最顶部
+    wx.pageScrollTo({
+      scrollTop:0,
+      duration:500,
+    })
+    //跳转时，清空之前的数据
+    this.setData({
+      articleList:[],
+        markTypeList:[],
+        recommendInfo:[],
+    })
+    
+  },
+  
+ 
 
   /**
    * 生命周期函数--监听页面初次渲染完成
@@ -99,7 +128,8 @@ Page({
 
   /**
    * 生命周期函数--监听页面隐藏
-   */
+   *
+    indexR/
   onHide: function () {
 
   },
@@ -125,7 +155,7 @@ Page({
     // console.log("1111");
     let more = randomStr(20);
     this.setData({
-      getMore:more,
+      More:more,
     })
   },
 

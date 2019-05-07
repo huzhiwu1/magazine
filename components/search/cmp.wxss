@@ -1,0 +1,17 @@
+/* components/search/cmp.wxss */
+.container{
+    width:710rpx;
+    margin:0 20rpx;
+    display:flex;
+    justify-content: center;
+    text-align:center;
+}
+input{
+    background-color: #eee;
+    padding:10rpx 20rpx;
+    border-radius:10rpx;
+}
+text{
+    padding:10rpx 20rpx;
+
+}

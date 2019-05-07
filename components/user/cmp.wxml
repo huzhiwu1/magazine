@@ -1,0 +1,8 @@
+<!--components/user/cmp.wxml-->
+<!-- <text>components/user/cmp.wxml</text> -->
+<view class="userInfo">
+        <image class="avatar" src="{{avatar}}"></image>
+        <text class="peopleName">{{people}}</text>
+        <text class="count">等{{count}}人马克了</text>
+
+    </view>

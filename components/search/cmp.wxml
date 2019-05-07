@@ -1,0 +1,10 @@
+<!--components/search/cmp.wxml-->
+<!-- <text>components/search/cmp.wxml</text> -->
+<view class="container">
+    <input bindconfirm="onSearch"
+    type="text" 
+    value="{{value}}"
+    bindblur="getValue"
+    placeholder="{{searchValue.length==0?'只能搜索读书':searchValue}}"/>
+    <text catchtap="searchBtn">搜索</text>
+</view>

@@ -3,6 +3,7 @@
     width:710rpx;
     padding:20rpx;
     white-space:nowrap;
+    background-color:#fff;
 }
 .type{
     color:#888;

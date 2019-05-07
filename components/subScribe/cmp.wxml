@@ -1,0 +1,3 @@
+<!--components/subScribe/cmp.wxml-->
+<!-- <text>components/subScribe/cmp.wxml</text> -->
+<view class="container {{class}}" catchtap="onTap">{{class==""?'订阅':'已定阅'}}</view>

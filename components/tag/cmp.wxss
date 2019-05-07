@@ -2,9 +2,9 @@
 .container{
     display:inline-block;
     padding:10rpx;
-    font-size:32rpx;
+    font-size:28rpx;
     font-weight:300;
-    
+    margin:10rpx 20rpx;
     border:1rpx solid #000;
    
 }

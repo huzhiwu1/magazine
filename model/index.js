@@ -7,15 +7,15 @@ class indexModel extends Request{
         })
     }
     // 获取首页标记标签列表
-    getMarkTypeList(){
+    getMarkTypeList(magazineId=0){
         return this.getData({
-            url:'/getMarkTypeList/0'
+            url:`/getMarkTypeList/${magazineId}`
         })
     }
     // 文章首页推荐详情
-    getRecommendInfo(){
+    getRecommendInfo(magazineId=0){
         return this.getData({
-            url:'/getRecommendInfo/0'
+            url:`/getRecommendInfo/${magazineId}`
         })
     }
 }

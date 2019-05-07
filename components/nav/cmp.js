@@ -21,11 +21,17 @@ Component({
    */
   methods: {
     onTap:function(e){
+      let lastIndex = this.data.magazineIndex;
       let index = e.currentTarget.dataset.index;
       this.setData({
         magazineIndex:index,
         activeId:`magazine${index==0?index:index-1}`
       })
+      if(index==lastIndex){
+        return;
+      }
+     
+      this.triggerEvent("myEvent",{magazineIndex:index})
     }
   }
 })

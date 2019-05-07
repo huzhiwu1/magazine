@@ -21,6 +21,6 @@
         </view>
     </view>
     <view class="userLike">
-        <d-article></d-article>
+        <d-article wx:for="{{likeList}}" articleDetail="{{item}}" wx:key="{{item.artId}}"></d-article>
     </view>
 </view>

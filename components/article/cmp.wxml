@@ -1,6 +1,11 @@
 <!--components/article/cmp.wxml-->
 <!-- <text>components/article/cmp.wxml</text> -->
 <view class="container">
+    <d-user
+        avatar="{{articleDetail.mark.avatar}}"
+        people="{{articleDetail.mark.people}}"
+        count="{{articleDetail.mark.count}}"
+    ></d-user>
     <d-nineimg wx:if="{{articleDetail.type==1}}"
             imgArr="{{articleDetail.imgArray}}"
             mainText="{{articleDetail.mainTitle}}"
@@ -30,7 +35,7 @@
         <d-tag tagName="{{articleDetail.tag}}" typeid="{{articleDetail.tagId}}"></d-tag>
         <view class="tagArr">
             <d-more></d-more>
-            <d-collection></d-collection>
+            <d-collection isLike="{{isLike}}"catch:like="onLike"></d-collection>
         </view>
         
     </view>

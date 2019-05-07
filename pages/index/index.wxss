@@ -2,3 +2,51 @@
 /* page{
     padding:0 20rpx;
 } */
+.tag{
+    display:inline-block;
+    padding:10rpx;
+    font-size:28rpx;
+    font-weight:300;
+    margin:10rpx 20rpx;
+    border:1rpx solid #000;
+    background-color:#000;
+    color:#fff
+}
+.tag2{
+    display:inline-block;
+    padding:10rpx;
+    font-size:28rpx;
+    font-weight:300;
+    margin:10rpx 20rpx;
+    border:1rpx solid #000;
+  
+    
+}
+.nav{
+    display:block;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:999;
+}
+.recommend{
+    margin-top:150rpx;
+    display:block;
+}
+.loadingWrap{
+    background-color:#fff;
+    position:fixed;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    
+}
+.loading{
+    display:block;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-top:-30rpx;
+    margin-left:-30rpx;
+}

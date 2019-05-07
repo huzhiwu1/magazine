@@ -1,6 +1,6 @@
 <!--components/articleList/cmp.wxml-->
 <!-- <text>components/articleList/cmp.wxml</text> -->
-<view class="container" more="{{getMore}}" magazineId="{{magazineId}}">
+<view class="container" more="{{getMore}}" magazineId="{{magazineId}}" word="{{word}}">
   
     <block wx:for="{{articleList}}">
     <d-article articleDetail="{{item}}"></d-article>

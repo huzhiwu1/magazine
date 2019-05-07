@@ -1,0 +1,13 @@
+/* components/subScribe/cmp.wxss */
+.container{
+    width:150rpx;
+    color:#fff;
+    background-color:#000;
+    padding:10rpx 0;
+    text-align: center;
+    border:1rpx solid #000;
+}
+.container.subscribe{
+    background-color: #fff;
+    color:#000;
+}

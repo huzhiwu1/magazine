@@ -1,0 +1,6 @@
+/* components/tagList/cmp.wxss */
+.container{
+    width:750rpx;
+   
+
+}

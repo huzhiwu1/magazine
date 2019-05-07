@@ -19,9 +19,11 @@ Component({
    */
   methods: {
     likeIt:function(){
+      const like=!this.data.isLike
       this.setData({
-        isLike:!this.data.isLike,
+        isLike:like,
       })
+      this.triggerEvent("like",{like})
     }
   }
 

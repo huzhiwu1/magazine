@@ -28,9 +28,18 @@
 <!-- <block wx:for="{{articleList}}">
     <d-article articleDetail="{{item}}"></d-article>
 </block> -->
-<d-nav></d-nav>
-<d-recommend></d-recommend>
+<d-nav class="nav" bind:myEvent="onNavTap"></d-nav>
+<d-recommend class="recommend" title="{{recommendInfo.title}}"magazineIndex="{{magazineId}}" imgSrc="{{recommendInfo.imgSrc}}"></d-recommend>
+<d-tagList tagList="{{markTypeList}}">
+    <!-- 小程序默认只能一个插槽，需要使用多个的话，
+    需要在组件中加个options:{mutipleSlots:true} -->
+    <view slot="before" class="tag" wx:if="{{magazineId==0}}">+</view>
+    <view slot="after" class="tag2" wx:if="{{magazineId==0}}" catchtap="goCataLog">...</view>
+</d-tagList>
 <d-articleList articleList="{{articleList}}"
-                more="{{getMore}}"
+                more="{{More}}"
                 magazineId="{{magazineId}}"
 ></d-articleList>
+<view class="loadingWrap" hidden="{{!loading}}">
+    <d-loading class="loading"></d-loading>
+</view>

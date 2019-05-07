@@ -1,9 +1,10 @@
 <!--components/recommend/cmp.wxml-->
 <!-- <text>components/recommend/cmp.wxml</text> -->
 <view class="container">
-    <text class="date">{{date}}</text>
+    <text class="date">{{magazineIndex==0?date:magazineType[magazineIndex]}}</text>
     <text class="title">{{title}}</text>
-    <image class="img" mode="widthFix" src="{{imgSrc}}" hidden="{{!imgSrc}}"></image>
+    <!-- 用hidden在图片没加载过来之前会报错，用if则不会 -->
+    <image class="img" mode="widthFix" src="{{imgSrc}}" wx:if="{{imgSrc}}"></image>
     <view class="loader" hidden="{{imgSrc}}">
         <view class="loading"></view>
     </view>

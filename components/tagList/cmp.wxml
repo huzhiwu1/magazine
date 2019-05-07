@@ -1,0 +1,9 @@
+<!--components/tagList/cmp.wxml-->
+<!-- <text>components/tagList/cmp.wxml</text> -->
+<view class="container">
+     <!-- 小程序默认只能一个插槽，需要使用多个的话，
+    需要在组件中加个options:{mutipleSlots:true} -->
+    <slot name="before" ></slot>
+    <d-tag wx:for="{{tagList}}" wx:key="*this" tagName="{{item.type||item.tag}}" typeid="{{item.typeId||item.tagId}}"></d-tag>
+    <slot name="after"></slot>
+</view>

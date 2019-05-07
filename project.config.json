@@ -40,12 +40,27 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 0,
+			"current": 2,
 			"list": [
 				{
 					"id": -1,
 					"name": "index",
 					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "log",
+					"pathName": "pages/cataLog/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 2,
+					"name": "search",
+					"pathName": "pages/search/index",
+					"query": "wd=读书",
 					"scene": null
 				}
 			]
