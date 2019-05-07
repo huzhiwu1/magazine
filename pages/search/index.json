@@ -2,5 +2,6 @@
   "usingComponents": {
     "d-search":"/components/search/cmp",
     "d-articleList":"/components/articleList/cmp"
-  }
+  },
+  "navigationBarTitleText":"搜索"
 }
